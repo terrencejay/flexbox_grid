@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.background-image {
+    background-image: url('Charizard.png');
+    background-size: contain;
+    background-position: center; 
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    color: white; 
+    text-align:left; 
+    padding: 20px;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #975a04; /* Contrast color */
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Main content takes remaining space */
+    padding: 20px;
+    align-items: center; /* Center main content horizontally */
+}
+
+.content-section {
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%; /* Limit content width for better centering */
+    text-align: center; /* center content text */
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center footer items */
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin: 0 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    nav ul, footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li, footer li {
+        margin: 10px 0;
+    }
+    main{
+        flex-direction: column;
+    }
+}
